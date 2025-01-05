@@ -32,7 +32,7 @@ data = pd.read_csv(fichier_path, delim_whitespace=True, header=None)
 # Convertion to numpy array
 L = 0.4  # m 
 l = 0.04 # m
-T = data[0][len(data[0])-1] * 30/25 # ! problème de dt au niveau du fichier
+T = data[0][len(data[0])-1] * 30/25 # The data were created using a resolution of 30fps.
 N_x = max(data[1])+1 
 N_t = int(len(data[0])/N_x)
     
